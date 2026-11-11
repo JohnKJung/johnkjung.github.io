@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://decargroup.github.io/'>DECAR Group</a>, McGill University. Montreal, Canada.
+subtitle: <a href='https://faunarobotics.com/'>Fauna</a>, Amazon. New York.
 
 profile:
   align: right
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a research scientist at [Amazon Fauna](https://faunarobotics.com/) in New York working on humanoid localization and mapping. I graduated my Ph.D. from [DECAR](https://decargroup.github.io/) research group at [McGill University](https://www.mcgill.ca/), specializing in robot perception and navigation under the supervision of [Professor James Richard Forbes](https://jrforbes.github.io/). Specifically, my research focused on developing robust simultaneous localization and mapping (SLAM) algorithms for autonomous underwater vehicles operating in challenging environments. My work involved designing sensor fusion techniques, probabilistic mapping methods, and real-time navigation strategies to enhance the capabilities of underwater robots in complex and dynamic scenarios.
+I am a Canadian research scientist at [Amazon Fauna](https://faunarobotics.com/) working on humanoid localization and mapping. I graduated my Ph.D. from [DECAR](https://decargroup.github.io/) research group at [McGill University](https://www.mcgill.ca/), specializing in robot perception and navigation under the supervision of [Professor James Richard Forbes](https://jrforbes.github.io/). Specifically, my research focused on developing robust simultaneous localization and mapping (SLAM) algorithms for autonomous underwater vehicles operating in challenging environments. My work involved designing sensor fusion techniques, probabilistic mapping methods, and real-time navigation strategies to enhance the capabilities of underwater robots in complex and dynamic scenarios.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
