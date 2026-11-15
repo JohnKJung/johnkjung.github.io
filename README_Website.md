@@ -16,10 +16,10 @@ Go to <https://github.com/alshedivat/al-folio> → green **Use this template** �
 
 Name it:
 
-| Site type | Repo name | Resulting URL |
-|---|---|---|
-| Personal / org | `<username>.github.io` | `https://<username>.github.io` |
-| Project | anything, e.g. `lab-site` | `https://<username>.github.io/lab-site/` |
+| Site type      | Repo name                 | Resulting URL                            |
+| -------------- | ------------------------- | ---------------------------------------- |
+| Personal / org | `<username>.github.io`    | `https://<username>.github.io`           |
+| Project        | anything, e.g. `lab-site` | `https://<username>.github.io/lab-site/` |
 
 Keep it **public** (private repos need GitHub Pro for Pages).
 
@@ -38,7 +38,7 @@ title: My Website
 first_name: Your
 last_name: Name
 url: https://<username>.github.io
-baseurl:            # personal site: leave EMPTY, do not delete the key
+baseurl: # personal site: leave EMPTY, do not delete the key
 # baseurl: /lab-site/   # project site: use this instead
 ```
 
@@ -75,16 +75,16 @@ Every push to `main` triggers a rebuild automatically. No manual deploy step.
 
 ### 8. Files you will actually edit
 
-| Path | Purpose |
-|---|---|
-| `_config.yml` | Site-wide settings, theme color, feature toggles |
-| `_pages/about.md` | Landing page / bio |
-| `assets/img/prof_pic.jpg` | Profile photo (replace, keep the filename) |
-| `_bibliography/papers.bib` | Publications (BibTeX in, page out) |
-| `_data/socials.yml` | Social + academic links |
-| `_news/` | Short announcements shown on the homepage |
-| `_projects/` | Project cards |
-| `_posts/` | Blog posts, named `YYYY-MM-DD-title.md` |
+| Path                       | Purpose                                          |
+| -------------------------- | ------------------------------------------------ |
+| `_config.yml`              | Site-wide settings, theme color, feature toggles |
+| `_pages/about.md`          | Landing page / bio                               |
+| `assets/img/prof_pic.jpg`  | Profile photo (replace, keep the filename)       |
+| `_bibliography/papers.bib` | Publications (BibTeX in, page out)               |
+| `_data/socials.yml`        | Social + academic links                          |
+| `_news/`                   | Short announcements shown on the homepage        |
+| `_projects/`               | Project cards                                    |
+| `_posts/`                  | Blog posts, named `YYYY-MM-DD-title.md`          |
 
 ### 9. Field-by-field reference
 
@@ -98,16 +98,16 @@ Two rules that apply everywhere:
 Identity — drives the navbar name, `<title>`, and SEO:
 
 ```yaml
-title: blank              # navbar brand; "blank" falls back to your name
+title: blank # navbar brand; "blank" falls back to your name
 first_name: Ada
 middle_name:
 last_name: Lovelace
-description: >            # site-wide meta description
+description: > # site-wide meta description
   Postdoc in numerical analysis at ...
 keywords: numerical analysis, scientific computing
 ```
 
-Publication author matching — underlines *your* name in the publication list. Include every form your name appears in:
+Publication author matching — underlines _your_ name in the publication list. Include every form your name appears in:
 
 ```yaml
 scholar:
@@ -117,24 +117,24 @@ scholar:
 
 Feature toggles — search for these keys and flip them:
 
-| Key | Effect |
-|---|---|
-| `search_enabled` | Site-wide search (navbar button + `Ctrl/Cmd+K`) |
-| `bib_search` | Search box on the publications page |
-| `posts_in_search` / `socials_in_search` | Include posts / social links in search results |
-| `enable_darkmode` | Light/dark toggle |
-| `enable_navbar_social` | Social icons in the navbar, not just the about page |
-| `enable_project_categories` | Category tabs on the projects page |
-| `enable_publication_thumbnails` | Show `preview` images next to publications |
-| `max_author_limit` | Authors shown before a "more" link; blank = show all |
-| `enable_medium_zoom` | Click-to-zoom on images |
-| `enable_progressbar` | Scroll progress bar |
+| Key                                     | Effect                                               |
+| --------------------------------------- | ---------------------------------------------------- |
+| `search_enabled`                        | Site-wide search (navbar button + `Ctrl/Cmd+K`)      |
+| `bib_search`                            | Search box on the publications page                  |
+| `posts_in_search` / `socials_in_search` | Include posts / social links in search results       |
+| `enable_darkmode`                       | Light/dark toggle                                    |
+| `enable_navbar_social`                  | Social icons in the navbar, not just the about page  |
+| `enable_project_categories`             | Category tabs on the projects page                   |
+| `enable_publication_thumbnails`         | Show `preview` images next to publications           |
+| `max_author_limit`                      | Authors shown before a "more" link; blank = show all |
+| `enable_medium_zoom`                    | Click-to-zoom on images                              |
+| `enable_progressbar`                    | Scroll progress bar                                  |
 
 Layout:
 
 ```yaml
-max_width: 930px          # content column width
-navbar_fixed: true        # navbar sticks on scroll
+max_width: 930px # content column width
+navbar_fixed: true # navbar sticks on scroll
 footer_fixed: true
 back_to_top: true
 ```
@@ -156,28 +156,27 @@ This is your landing page. Front matter controls the layout, body is plain Markd
 ---
 layout: about
 title: about
-permalink: /                # keep as / — this is the homepage
+permalink: / # keep as / — this is the homepage
 subtitle: <a href='#'>Lab or Department</a>. Office. Email.
 
 profile:
-  align: right              # right | left
-  image: prof_pic.jpg       # filename inside assets/img/
-  image_circular: false     # true = circular crop
-  more_info: >              # HTML block under the photo
+  align: right # right | left
+  image: prof_pic.jpg # filename inside assets/img/
+  image_circular: false # true = circular crop
+  more_info: > # HTML block under the photo
     <p>Room 4021</p>
     <p>Montréal, QC</p>
 
-selected_papers: true       # show papers marked selected={true}
-social: true                # social icons at the bottom
+selected_papers: true # show papers marked selected={true}
+social: true # social icons at the bottom
 announcements:
   enabled: true
   scrollable: true
-  limit: 5                  # news items shown
+  limit: 5 # news items shown
 latest_posts:
   enabled: true
   limit: 3
 ---
-
 Your bio goes here, in Markdown.
 ```
 
@@ -196,7 +195,7 @@ One key per line, uncomment what you use, delete or leave blank what you don't. 
 ```yaml
 email: ada@university.ca
 github_username: adalovelace
-scholar_userid: XXXXXXXXXXXX     # from your Scholar profile URL
+scholar_userid: XXXXXXXXXXXX # from your Scholar profile URL
 orcid_id: 0000-0002-1825-0097
 linkedin_username: adalovelace
 work_url: https://lab.university.ca
@@ -225,16 +224,16 @@ Standard BibTeX plus al-folio extras. Grab entries from Google Scholar (quotatio
 }
 ```
 
-| Field | Effect |
-|---|---|
-| `selected={true}` | Also appears on the about page |
-| `abbr` | Venue badge on the left |
-| `pdf`, `poster`, `slides`, `supp` | Buttons; bare filenames resolve to `assets/pdf/` |
-| `preview` | Thumbnail; file goes in `assets/img/publication_preview/` |
-| `arxiv`, `doi`, `hal` | Identifier only — the link is generated |
-| `code`, `website`, `blog`, `video` | Full URLs |
-| `abstract` | "Abs" expand button |
-| `bibtex_show={true}` | "Bib" button showing the raw entry |
+| Field                              | Effect                                                    |
+| ---------------------------------- | --------------------------------------------------------- |
+| `selected={true}`                  | Also appears on the about page                            |
+| `abbr`                             | Venue badge on the left                                   |
+| `pdf`, `poster`, `slides`, `supp`  | Buttons; bare filenames resolve to `assets/pdf/`          |
+| `preview`                          | Thumbnail; file goes in `assets/img/publication_preview/` |
+| `arxiv`, `doi`, `hal`              | Identifier only — the link is generated                   |
+| `code`, `website`, `blog`, `video` | Full URLs                                                 |
+| `abstract`                         | "Abs" expand button                                       |
+| `bibtex_show={true}`               | "Bib" button showing the raw entry                        |
 
 Co-author links come from `_data/coauthors.yml`, keyed by lowercase unaccented surname.
 
@@ -249,7 +248,6 @@ date: 2026-08-11 12:00:00-0400
 inline: true
 related_posts: false
 ---
-
 Paper accepted at **NeurIPS 2026**.
 ```
 
@@ -263,9 +261,9 @@ layout: page
 title: project name
 description: one-line subtitle on the card
 img: assets/img/12.jpg
-importance: 1               # sort order, 1 = first
-category: work              # groups cards when enable_project_categories: true
-related_publications: true  # link matching papers.bib entries
+importance: 1 # sort order, 1 = first
+category: work # groups cards when enable_project_categories: true
+related_publications: true # link matching papers.bib entries
 ---
 ```
 
@@ -281,9 +279,9 @@ date: 2026-08-11 09:00:00
 description: shown in listings
 tags: numerics julia
 categories: research
-featured: true              # pins to the top of the blog page
+featured: true # pins to the top of the blog page
 toc:
-  sidebar: left             # floating table of contents
+  sidebar: left # floating table of contents
 ---
 ```
 
@@ -296,7 +294,7 @@ Two supported formats: `_data/cv.yml` (RenderCV — can auto-generate a PDF via 
 ```yaml
 ---
 layout: cv
-cv_format: rendercv         # rendercv | jsonresume
+cv_format: rendercv # rendercv | jsonresume
 ---
 ```
 
