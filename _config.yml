@@ -7,7 +7,7 @@ first_name: John
 middle_name: Kyungmin
 last_name: Jung
 contact_note: >
-  You can best reach me via email at <a href="mailto:kyungmin.jung@mail.mcgill.ca">kyungmin.jung@mail.mcgill.ca</a>.
+  You can best reach me via email at <a href="mailto:kyungmin.jung95@gmail.com">kyungmin.jung95@gmail.com</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >

@@ -1,11 +1,12 @@
 cv:
   name: John K. Jung
-  label: Ph.D. Candidate
-  email: kyungmin.jung@mail.mcgill.ca
-  location: Montreal, QC, Canada
+  label: Applied Scientist
+  email: kyungmin.jung95@gmail.com
+  location: New York, NY, USA
   image: ""
   summary:
-    I am a Ph.D. candidate in Robotics at DECAR research group, McGill University, Canada.
+    I am an applied scientist at Amazon Fauna in New York.
+    I completed my Ph.D. in Robotics at DECAR research group, McGill University, Canada.
     My research interests include robot autonomy, specifically in the areas of robot perception, navigation, and mapping.
     I am passionate about developing algorithms and systems that enable robots to operate effectively in complex and dynamic environments.
 
@@ -16,11 +17,11 @@ cv:
       username: john-jung-b39020115
 
   address:
-    street: 1160 Rue Mackay
-    city: Montreal
-    region: QC
-    postalCode: H3G 0G8
-    countryCode: CA
+    street: 2-21 Malt Dr. Apt. 3202
+    city: New York
+    region: NY
+    postalCode: 11101
+    countryCode: US
 
   sections:
     Education:
@@ -36,6 +37,13 @@ cv:
         highlights:
 
     Experience:
+      - company: Amazon Fauna
+        position: Applied Scientist
+        location: New York, NY
+        start_date: 2026
+        highlights:
+          - Work on humanoid localization and mapping.
+
       - company: Voyis Imaging Inc.
         position: Graduate Student Researcher
         location: Waterloo, ON
